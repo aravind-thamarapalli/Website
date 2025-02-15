@@ -32,7 +32,6 @@ const StyledWrapper = styled.div`
         border-radius: 20px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         transition: all 0.4s ease-in-out;
-        
         @media (max-width: 1024px){
             height: fit-content;
             width: max-content;
