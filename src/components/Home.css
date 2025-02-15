@@ -1,0 +1,88 @@
+.home-bg {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    justify-content: space-evenly;
+    height: 100vh;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-l {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-club-name {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: normal;
+    color: #d9d9d9;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-motto {
+    color: #d9d9d9;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-l h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-club-name h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-club-name span {
+    color: #369CD3;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-l button {
+    margin: 20px;
+    padding: 15px 40px;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    width: max-content;
+    background-color: #22668A;
+    color: #d9d9d9;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in, border 0.3s ease-in, transform 0.3s ease-in-out;
+}
+
+.home-l button:hover {
+    background-color: transparent;
+    border: 2px solid #22668A;
+    box-shadow: 0 0 5px 0 #22668A;
+    color: #22668A;
+}
+
+.home-r {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-r img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+}
