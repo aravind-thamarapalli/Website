@@ -8,7 +8,7 @@ const Upcoming = () => {
         <StyledWrapper>
             <div className="upcoming">
                 <div className="events">
-                <SimpleBarReact style={{maxHeight: 520, width: 1240}}>
+                <SimpleBarReact style={{maxHeight: 600, width: 1240}}>
                     <div className="card">
                         <div className="title">
                             <h1>Upcoming</h1>
@@ -16,6 +16,7 @@ const Upcoming = () => {
                         <div className="desc">
                             <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
+                            <a href="#">Know more</a>
                         </div>
                     </div>
                     <div className="card">
@@ -25,6 +26,7 @@ const Upcoming = () => {
                         <div className="desc">
                             <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
+                            <a href="#">Know more</a>
                         </div>
                     </div>
                     <div className="card">
@@ -34,6 +36,7 @@ const Upcoming = () => {
                         <div className="desc">
                             <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
+                            <a href="#">Know more</a>
                         </div>
                     </div>
                     <div className="card">
@@ -43,6 +46,7 @@ const Upcoming = () => {
                         <div className="desc">
                             <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
+                            <a href="#">Know more</a>
                         </div>
                     </div>
                     <div className="card">
@@ -52,6 +56,7 @@ const Upcoming = () => {
                         <div className="desc">
                             <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
+                            <a href="#">Know more</a>
                         </div>
                     </div>
                     <div className="card">
@@ -61,6 +66,7 @@ const Upcoming = () => {
                         <div className="desc">
                             <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
+                            <a href="#">Know more</a>
                         </div>
                     </div>
                     <div className="card">
@@ -70,6 +76,7 @@ const Upcoming = () => {
                         <div className="desc">
                             <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
+                            <a href="#">Know more</a>
                         </div>
                     </div>
                     <div className="card">
@@ -79,8 +86,20 @@ const Upcoming = () => {
                         <div className="desc">
                             <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
+                            <a href="#">Know more</a>
                         </div>
                     </div>
+                    <div className="card">
+                        <div className="title">
+                            <h1>Upcoming</h1>
+                        </div>
+                        <div className="desc">
+                            <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
+                            <a href="#">Know more</a>
+                        </div>
+                    </div>
+
                 </SimpleBarReact>
                 </div>
             </div>
@@ -130,10 +149,10 @@ const StyledWrapper = styled.div`
     .desc{
         padding: 0 16px;
         width: 345px;
-        height: 430px;
+        height: 500px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         color: white;
         background: rgb(97, 199, 245, 0.1); 
@@ -151,7 +170,17 @@ const StyledWrapper = styled.div`
         width: 300px;
         object-fit: cover;
         border-radius: 20px;
-        margin-top: 16px;
+        margin-top: 36px;
+    }
+
+    .desc a{
+        text-decoration: none;
+        color: white;
+        background-color: #22668A;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 18px;
+        margin-top: 8px;
     }
 
     .simplebar-scrollbar::before {
