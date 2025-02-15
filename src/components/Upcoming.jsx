@@ -7,6 +7,7 @@ const Upcoming = () => {
     return (
         <StyledWrapper>
             <div className="upcoming">
+                <h1>Upcoming Events</h1>
                 <div className="events">
                 <SimpleBarReact style={{maxHeight: 600, width: 1240}}>
                     <div className="card">
@@ -110,6 +111,10 @@ const Upcoming = () => {
 const StyledWrapper = styled.div`
     .upcoming{
         font-family: "Outfit", serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .events{
         width: max-content; 
@@ -123,6 +128,12 @@ const StyledWrapper = styled.div`
         align-items: center;
     }
 
+    .upcoming h1{
+        color: white;
+        text-align: center;
+        font-size: 64px;
+    }
+
     .title{
         color: white;
         text-align: center;
@@ -131,7 +142,7 @@ const StyledWrapper = styled.div`
         z-index: 99;
     }
 
-    h1{
+    .title h1{
         background-color: #22668A; 
         border-radius: 25px;
         font-size: 32px;
