@@ -5,6 +5,7 @@ import Event from './components/Event'
 import Verticles from './components/Verticles'
 import Verticle from './components/Verticle'
 import Upcoming from './components/Upcoming'
+import Contact from './components/Contact'
 import './App.css'
 import About from './components/About'
 import EventDetails from './components/EventDetails'
@@ -26,6 +27,7 @@ function App() {
         <Route path='/aboutus' element={<About/>}/>
         <Route path='/event' element={<Event />} />
         <Route path='/upcoming' element={<Upcoming/>}/> 
+        <Route path='/contact' element={<Contact/>}/>
         <Route path='/verticle' element={<Verticle />} />
         <Route path='/eventdetails' element={<EventDetails />} />
       </Routes>
