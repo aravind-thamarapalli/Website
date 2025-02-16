@@ -58,7 +58,6 @@ const StyledWrapper = styled.div`
     }
     .title{
         font-size: 64px;
-        height: 12px;
 
         @media (max-width: 768px){
             font-size: 48px;

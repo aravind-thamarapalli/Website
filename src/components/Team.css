@@ -1,0 +1,90 @@
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 150px;
+}
+
+.team-head {
+    
+    font-size: 3rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    text-align: right;
+    margin: 0 70px;
+    color: #d9d9d9;
+    margin-top: 5%;
+}
+
+/* Faculty tab */
+
+.team-faculty-cont {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hod-cont {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 250px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    margin: 20px;
+}
+
+.hod-cont h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.hod {
+    background-color: #d9d9d9;
+    width: 250px;
+    height: 460px;
+    transition: all 0.3s ease-in-out;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.faculty-cont {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.faculty {
+    background-color: #d9d9d9;
+    width: 250px;
+    height: 250px;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.faculty img {
+    width: 245px;
+    height: 245px;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Student Tab */
+
+
+.student-scroll {
+    background-color: #004468;
+    height: max-content;
+}
+
+.custom-scroll-text {
+    font-size: 2rem;
+}
