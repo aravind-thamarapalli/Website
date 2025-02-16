@@ -3,6 +3,7 @@ import Home from './components/Home'
 import Team from './components/Team'
 import Verticles from './components/Verticles'
 import Upcoming from './components/Upcoming'
+import Contact from './components/Contact'
 import './App.css'
 import About from './components/About'
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/verticles' element={<Verticles />} />
         <Route path='/aboutus' element={<About/>}/>
         <Route path='/upcoming' element={<Upcoming/>}/> 
+        <Route path='/contact' element={<Contact/>}/>
       </Routes>
     </>
   )
