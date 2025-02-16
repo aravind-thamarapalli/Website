@@ -86,3 +86,71 @@
     height: auto;
     transition: all 0.3s ease-in-out;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .home-container {
+        padding: 0 100px;
+    }
+
+    .home-l h1 {
+        font-size: 4rem;
+    }
+
+    .home-club-name h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .home-container {
+        flex-direction: column;
+        padding: 0 50px;
+    }
+
+    .home-l h1 {
+        font-size: 3rem;
+    }
+
+    .home-club-name h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        padding: 0 20px;
+    }
+
+    .home-l h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-club-name h1 {
+        font-size: 2rem;
+    }
+
+    .home-l button {
+        padding: 10px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-container {
+        padding: 0 10px;
+    }
+
+    .home-l h1 {
+        font-size: 2rem;
+    }
+
+    .home-club-name h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-l button {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}

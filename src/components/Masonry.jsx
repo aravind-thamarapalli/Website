@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { useTransition, a } from '@react-spring/web';
+import { useNavigate } from "react-router-dom";
 
 import './Masonry.css';
 
@@ -64,6 +65,8 @@ function Masonry({ data }) {
     trail: 25,
   });
 
+  const navigate = useNavigate();
+
   // Render the Masonry grid
   return (
     <div ref={ref} className="masonry" style={{ height: heights.length ? Math.max(...heights) : 'auto' }}>
@@ -71,7 +74,7 @@ function Masonry({ data }) {
         <a.div key={item.id} style={style}>
           <h1 className='tile-title'>{item.name}</h1>
           <div
-            onClick={() => window.open(item.image, '_blank')}
+            onClick={ ()=>{navigate("/verticle", { state: { item } })}}
             style={{
               backgroundColor: '#ffffff', // Background color if image fails to load
               width: '100%',

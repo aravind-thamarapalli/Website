@@ -1,0 +1,199 @@
+.verticle {
+    display: flex;
+    flex-direction: column;
+    margin: 0 150px;
+}
+
+.verticle-title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.verticle-description {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.verticle-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.verticle-11 {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.team-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.team-lead {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #369CD3;
+}
+
+.team-co-leads {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #369CD3;
+}
+
+.events-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid #0043;
+    border-radius: 10px;
+}
+
+.events-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.events-list {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.events-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.events-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.events-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+.events-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.event-item {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.event-name {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.event-date {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #369CD3;
+}
+
+.event-description {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.event-participants {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #369CD3;
+    margin-bottom: 20px;
+}
+
+.event-participants-count {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #d9d9d9;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .verticle {
+        margin: 0 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .verticle {
+        margin: 0 50px;
+    }
+    .verticle-title {
+        font-size: 4rem;
+    }
+    .verticle-description {
+        font-size: 1.75rem;
+    }
+    .team-title, .events-title {
+        font-size: 2.5rem;
+    }
+    .team-lead, .team-co-leads {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .verticle {
+        margin: 0 20px;
+    }
+    .verticle-1 {
+        flex-direction: column;
+    }
+    .verticle-11 {
+        width: 100%;
+    }
+    .verticle-title {
+        font-size: 3rem;
+    }
+    .verticle-description {
+        font-size: 1.5rem;
+    }
+    .team-title, .events-title {
+        font-size: 2rem;
+    }
+    .team-lead, .team-co-leads {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .verticle {
+        margin: 0 10px;
+    }
+    .verticle-title {
+        font-size: 2.5rem;
+    }
+    .verticle-description {
+        font-size: 1.25rem;
+    }
+    .team-title, .events-title {
+        font-size: 1.75rem;
+    }
+    .team-lead, .team-co-leads {
+        font-size: 1.5rem;
+    }
+    .event-name {
+        font-size: 1.5rem;
+    }
+    .event-date {
+        font-size: 1rem;
+    }
+    .event-description, .event-participants, .event-participants-count {
+        font-size: 0.875rem;
+    }
+}
