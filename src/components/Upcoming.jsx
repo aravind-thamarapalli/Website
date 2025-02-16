@@ -2,106 +2,28 @@ import styled from 'styled-components';
 import SimpleBarReact from "simplebar-react";
 import 'simplebar-react/dist/simplebar.min.css';
 
-
 const Upcoming = () => {
     return (
         <StyledWrapper>
             <div className="upcoming">
                 <h1>Upcoming Events</h1>
                 <div className="events">
-                <SimpleBarReact style={{maxHeight: 600, width: 1240}}>
-                    <div className="card">
-                        <div className="title">
-                            <h1>Upcoming</h1>
+                    <SimpleBarReact style={{ maxWidth: '100%', overflowX: 'auto' }}>
+                        <div className="event-container">
+                            {[...Array(10)].map((_, index) => (
+                                <div className="card" key={index}>
+                                    <div className="title">
+                                        <h1>Upcoming</h1>
+                                    </div>
+                                    <div className="desc">
+                                        <img src="https://source.unsplash.com/400x300/?event" alt="Event" />
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                        <a href="#">Know more</a>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
-                        <div className="desc">
-                            <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
-                            <a href="#">Know more</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="title">
-                            <h1>Upcoming</h1>
-                        </div>
-                        <div className="desc">
-                            <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
-                            <a href="#">Know more</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="title">
-                            <h1>Upcoming</h1>
-                        </div>
-                        <div className="desc">
-                            <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
-                            <a href="#">Know more</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="title">
-                            <h1>Upcoming</h1>
-                        </div>
-                        <div className="desc">
-                            <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
-                            <a href="#">Know more</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="title">
-                            <h1>Upcoming</h1>
-                        </div>
-                        <div className="desc">
-                            <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
-                            <a href="#">Know more</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="title">
-                            <h1>Upcoming</h1>
-                        </div>
-                        <div className="desc">
-                            <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
-                            <a href="#">Know more</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="title">
-                            <h1>Upcoming</h1>
-                        </div>
-                        <div className="desc">
-                            <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
-                            <a href="#">Know more</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="title">
-                            <h1>Upcoming</h1>
-                        </div>
-                        <div className="desc">
-                            <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
-                            <a href="#">Know more</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="title">
-                            <h1>Upcoming</h1>
-                        </div>
-                        <div className="desc">
-                            <img src="https://imgs.search.brave.com/tf9EqN3WcKRxE5qTGLOOuo57kc9-9enAZ8b43vpcUbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGhvbmUtdGFraW5n/LXBob3RvLW9mLW11/c2V1bS5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w" alt="" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates soluta incidunt quia voluptatum illo sequi saepe commodi. Facere assumenda error officia sunt, veritatis deleniti recusandae eveniet itaque minima nam?</p>
-                            <a href="#">Know more</a>
-                        </div>
-                    </div>
-
-                </SimpleBarReact>
+                    </SimpleBarReact>
                 </div>
             </div>
         </StyledWrapper>
@@ -109,82 +31,90 @@ const Upcoming = () => {
 }
 
 const StyledWrapper = styled.div`
-    .upcoming{
+    .upcoming {
         font-family: "Outfit", serif;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .events{
-        width: max-content; 
-        height: 568px; 
-        overflow-y: auto;
+
+    .events {
+        width: 90%; 
+        height: 550px; 
+        overflow-x: auto;
         border: 1px solid #22668A;
         border-radius: 20px;
-        padding: 10px 10px;
+        padding: 10px;
         display: flex;
-        justify-content: center;
         align-items: center;
     }
 
-    .upcoming h1{
+    .upcoming h1 {
         color: white;
         text-align: center;
-        font-size: 64px;
+        font-size: 48px;
     }
 
-    .title{
-        color: white;
-        text-align: center;
-        height: 50px;
-        width: 180px;   
-        z-index: 99;
+    .event-container {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        align-items: center;
     }
 
-    .title h1{
-        background-color: #22668A; 
-        border-radius: 25px;
-        font-size: 32px;
-        padding: 8px;
-    }
-    
-    .card{
+    .card {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 14px;
+        min-width: 350px;
+        
     }
 
-    .desc{
+    .title {
+        color: white;
+        text-align: center;
+        height: 2rem;
+        width: 180px;   
+        z-index: 1;
+    }
+
+    .title h1 {
+        background-color: #22668A;
+        border-radius: 25px;
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    .desc {
         padding: 0 16px;
         width: 345px;
-        height: 500px;
+        height: 450px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         color: white;
-        background: rgb(97, 199, 245, 0.1); 
+        background: rgba(97, 199, 245, 0.1); 
         border-radius: 10px;
         border: 1px solid  #22668A;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
-        z-index: -99;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        z-index: -1;
     }
 
-    .desc p{
+    .desc p {
         font-size: 18px;
     }
 
-    .desc img{
-        width: 300px;
+    .desc img {
+        width: 100%;
         object-fit: cover;
         border-radius: 20px;
-        margin-top: 36px;
+        margin-top: 16px;
     }
 
-    .desc a{
+    .desc a {
         text-decoration: none;
         color: white;
         background-color: #22668A;
@@ -196,13 +126,6 @@ const StyledWrapper = styled.div`
 
     .simplebar-scrollbar::before {
         background-color: #58B4DD;
-    }
-
-    .simplebar-content{
-        display: flex;
-        flex-direction: row;
-        gap: 24px;
-        align-items: center;
     }
 `;
 
