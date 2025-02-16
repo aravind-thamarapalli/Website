@@ -10,8 +10,8 @@ const ContactWrapper = styled.div`
     align-items: center;
     padding: 2rem 8rem;
     gap: 2rem;
-  @media (max-width: 768px) {
-  font-family: "Outfit", serif;   
+    @media (max-width: 768px) {
+    font-family: "Outfit", serif;   
     flex-direction: column;
     gap: 2rem;
   }
