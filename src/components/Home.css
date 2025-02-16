@@ -54,24 +54,10 @@
 }
 
 .home-l button {
-    margin: 20px;
-    padding: 15px 40px;
-    border: 2px solid transparent;
-    border-radius: 999px;
-    width: max-content;
-    background-color: #22668A;
-    color: #d9d9d9;
-    font-size: 1.2rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in, border 0.3s ease-in, transform 0.3s ease-in-out;
-}
-
-.home-l button:hover {
+    font-size: 1rem;
+    border: none;
     background-color: transparent;
-    border: 2px solid #22668A;
-    box-shadow: 0 0 5px 0 #22668A;
-    color: #22668A;
+    cursor: pointer;
 }
 
 .home-r {
@@ -85,6 +71,15 @@
     width: 100%;
     height: auto;
     transition: all 0.3s ease-in-out;
+}
+
+.custom-spotlight-card {
+    height: 100%;
+    width: max-content;
+}
+
+.custom-spotlight-card p {
+    font-size: 24px;
 }
 
 /* Media Queries for Responsiveness */
@@ -106,6 +101,7 @@
     .home-container {
         flex-direction: column;
         padding: 0 50px;
+        margin: 20px 0;
     }
 
     .home-l h1 {
@@ -120,6 +116,7 @@
 @media (max-width: 768px) {
     .home-container {
         padding: 0 20px;
+        margin: 15px 0;
     }
 
     .home-l h1 {
@@ -134,11 +131,16 @@
         padding: 10px 30px;
         font-size: 1rem;
     }
+
+    .home-r {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 576px) {
     .home-container {
         padding: 0 10px;
+        margin: 10px 0;
     }
 
     .home-l h1 {
@@ -152,5 +154,58 @@
     .home-l button {
         padding: 8px 20px;
         font-size: 0.9rem;
+    }
+
+    .home-r {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .home-container {
+        padding: 0 5px;
+        margin: 5px 0;
+    }
+
+    .home-l h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-club-name h1 {
+        font-size: 1.2rem;
+    }
+
+    .home-l button {
+        padding: 6px 15px;
+        font-size: 0.8rem;
+    }
+
+    .home-r {
+        padding: 20px;
+    }
+}
+
+/* Additional Media Queries for Better Responsiveness */
+@media (max-width: 320px) {
+    .home-container {
+        padding: 0 2px;
+        margin: 2px 0;
+    }
+
+    .home-l h1 {
+        font-size: 1.2rem;
+    }
+
+    .home-club-name h1 {
+        font-size: 1rem;
+    }
+
+    .home-l button {
+        padding: 4px 10px;
+        font-size: 0.7rem;
+    }
+
+    .home-r {
+        padding: 20px;
     }
 }

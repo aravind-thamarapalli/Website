@@ -45,6 +45,25 @@
     margin-bottom: 20px;
 }
 
+.back-button {
+    background-color: #22668A;
+    color: white;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 333px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #1b4e6b;
+}
+
 @media (max-width: 768px) {
     .event-details {
         flex-direction: column;
