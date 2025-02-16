@@ -330,8 +330,8 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `src/assets/photos/lavanya.png`, text: 'PRESIDENT' },
-      { image: `src/assets/photos/aravind.png`, text: 'VICE PRESIDENT' },
+      { image: `src/assets/photos/lavanya.jpg`, text: 'PRESIDENT' },
+      { image: `src/assets/photos/aravind.jpg`, text: 'VICE PRESIDENT' },
       { image: `src/assets/photos/fathima.jpg`, text: 'SECRETARY' },
       { image: `src/assets/photos/laxmi.jpg`, text: 'TRESERUR' },
       { image: `src/assets/photos/moenuddin.jpg`, text: 'BLOCKCHAIN LEAD' },
@@ -465,7 +465,7 @@ export default function CircularGallery({
   bend = 3,
   textColor = "#ffffff",
   borderRadius = 0.05,
-  font = "bold 30px DM Sans"
+  font = "bold 30px DM Outfit"
 }) {
   const containerRef = useRef(null)
   useEffect(() => {

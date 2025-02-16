@@ -1,0 +1,124 @@
+{
+  "events": [
+    {
+      "event_id": 1,
+      "event_name": "Tech_Quiz",
+      "date": "5th October 2024",
+      "venue": "Main Auditorium, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+      "list_of_activities": ["Online Quiz Contest"],
+      "domain": "Club Activity",
+      "participants": 150,
+      "description": "The Online Quiz Contest held during the inauguration of the Association of Computer Intellects (AsCI) was a highly engaging and informative event. Designed to test participants' knowledge of computer science and technology, the quiz featured a variety of topics ranging from coding languages to the latest technological trends.",
+      "images": {
+        "image1": "src/assets/events/inaug/1.jpg",
+        "image2": "src/assets/events/inaug/2.jpg",
+        "image3": "src/assets/events/inaug/3.jpg"
+      }
+    },
+    {
+      "event_id": 2,
+      "event_name": "LOLgorithms",
+      "date": "5th October 2024",
+      "venue": "Main Auditorium, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+      "list_of_activities": ["Tech Related Meme Making Contest"],
+      "domain": "Club Activity",
+      "participants": 50,
+      "description": "LOLgorithms was a unique meme-making contest where students used humor to explain technical concepts related to algorithms and computer science. This event allowed participants to blend creativity with technical knowledge, making learning fun and engaging.",
+      "images": {
+        "image1": "src/assets/events/inaug/1.jpg",
+        "image2": "src/assets/events/inaug/2.jpg",
+        "image3": "src/assets/events/inaug/3.jpg"
+      }
+    },
+    {
+      "event_id": 3,
+      "event_name": "Cyber Hive",
+      "date": "30th November 2024",
+      "venue": "Mini Auditorium, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+      "list_of_activities": ["Interactive Seminar"],
+      "domain": "Cybersecurity & Networking",
+      "participants": 50,
+      "description": "Cyber Hive was an interactive seminar focused on cybersecurity awareness, scam prevention, and career opportunities in cybersecurity and networking. It featured live demonstrations of security threats and best practices for digital safety.",
+      "images": {
+        "image1": "src/assets/events/cyberhive/1.jpg",
+        "image2": "src/assets/events/cyberhive/2.jpg",
+        "image3": "src/assets/events/cyberhive/3.jpg"
+      }
+    },
+    {
+      "event_id": 4,
+      "event_name": "Output Unveiled",
+      "date": "7th December 2024",
+      "venue": "MIC Lab, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+      "list_of_activities": ["Coding Contest for 2nd and 3rd Year Students"],
+      "domain": "DSA & CP",
+      "participants": 50,
+      "description": "Output Unveiled was an intense coding contest where participants solved 16 programming challenges in C and C++, unlocking each level with the output of the previous question. It tested logical thinking, debugging, and problem-solving skills.",
+      "images": {
+        "image1": "src/assets/events/outputunvieled/1.jpg",
+        "image2": "src/assets/events/outputunvieled/2.jpg",
+        "image3": "src/assets/events/outputunvieled/3.jpg"
+      }
+    },
+    {
+      "event_id": 5,
+      "event_name": "PyMind",
+      "date": "7th December 2024",
+      "venue": "MIC Lab, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+      "list_of_activities": ["Python Quiz for 1st Year Students"],
+      "domain": "DSA & CP",
+      "participants": 50,
+      "description": "PyMind was an engaging Python-based quiz competition for first-year students. Covering basic to advanced Python topics, the quiz provided a competitive yet supportive environment to test and enhance programming skills.",
+      "images": {
+        "image1": "src/assets/events/pymind/1.jpg",
+        "image2": "src/assets/events/pymind/2.jpg",
+        "image3": "src/assets/events/pymind/3.jpg"
+      }
+    },
+    {
+      "event_id": 6,
+      "event_name": "Crypto Countdown: Final Block of 2024",
+      "date": "27th & 28th December 2024",
+      "venue": "Online, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+      "list_of_activities": ["Interactive Seminar"],
+      "domain": "Blockchain",
+      "participants": 50,
+      "description": "Crypto Countdown was a two-day online seminar covering blockchain fundamentals, decentralized finance (DeFi), smart contracts, and the future of Web3. Industry experts provided insights into blockchain's impact on business and security.",
+      "images": {
+        "image1": "src/assets/events/cryptocountdown/1.jpg",
+        "image2": "src/assets/events/cryptocountdown/2.jpg",
+        "image3": "src/assets/events/cryptocountdown/3.jpg"
+      }
+    },
+    {
+      "event_id": 7,
+      "event_name": "GET GIT GO – Master Version Control",
+      "date": "7th February 2025",
+      "venue": "LAB, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+      "list_of_activities": ["Hands-on Git Workshop"],
+      "domain": "Web Development",
+      "participants": 50,
+      "description": "A structured, practical workshop on Git and GitHub, including real-world applications and best practices.",
+      "images": {
+        "image1": "src/assets/events/getgitgo/1.jpg",
+        "image2": "src/assets/events/getgitgo/2.jpg",
+        "image3": "src/assets/events/getgitgo/3.jpg"
+      }
+    },
+    {
+      "event_id": 8,
+      "event_name": "Master The Code",
+      "date": "14th Feb 2025",
+      "venue": "Main Auditorium, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+      "list_of_activities": ["Timed Coding Competition with Algorithmic Challenges"],
+      "domain": "DSA & CP",
+      "participants": 50,
+      "description": "A timed coding competition with algorithmic challenges to test participants' problem-solving skills and coding speed.",
+      "images": {
+        "image1": "src/assets/events/masterthecode/1.jpg",
+        "image2": "src/assets/events/masterthecode/2.jpg",
+        "image3": "src/assets/events/masterthecode/3.jpg"
+      }
+    }
+  ]
+}

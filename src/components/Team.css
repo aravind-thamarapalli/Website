@@ -77,6 +77,81 @@
     border-radius: 10px 10px 0 0;
 }
 
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .team {
+        padding: 0 100px;
+    }
+
+    .team-head {
+        font-size: 2.5rem;
+        margin: 0 50px;
+    }
+
+    .hod, .faculty {
+        width: 200px;
+        height: auto;
+    }
+
+    .hod-cont, .faculty-cont {
+        width: 200px;
+    }
+
+    .hod-cont h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .team {
+        padding: 0 50px;
+        flex-direction: column;
+    }
+
+    .team-head {
+        font-size: 2rem;
+        margin: 0 30px;
+        text-align: center;
+    }
+
+    .hod, .faculty {
+        width: 150px;
+        height: auto;
+    }
+
+    .hod-cont, .faculty-cont {
+        width: 150px;
+    }
+
+    .hod-cont h1 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .team {
+        padding: 0 20px;
+    }
+
+    .team-head {
+        font-size: 1.5rem;
+        margin: 0 10px;
+    }
+
+    .hod, .faculty {
+        width: 100px;
+        height: auto;
+    }
+
+    .hod-cont, .faculty-cont {
+        width: 100px;
+    }
+
+    .hod-cont h1 {
+        font-size: 1rem;
+    }
+}
+
 /* Student Tab */
 
 

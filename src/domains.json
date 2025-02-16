@@ -1,0 +1,176 @@
+{
+  "domains": [
+    {
+      "name": "Blockchain",
+      "description": "Explores decentralized technologies, smart contracts, and blockchain applications.",
+      "lead": "Md Moinuddin",
+      "co_leads": ["Prasanna"],
+      "events": [
+        {
+          "name": "Crypto Countdown: Final Block of 2024",
+          "date": "27th & 28th December 2024",
+          "description": "Crypto Countdown was a two-day online seminar covering blockchain fundamentals, decentralized finance (DeFi), smart contracts, and the future of Web3. Industry experts provided insights into blockchain's impact on business and security.",
+          "participants": 45,
+          "images": {
+            "image1": "src/assets/events/cryptocountdown/1.jpg",
+            "image2": "src/assets/events/cryptocountdown/2.jpg",
+            "image3": "src/assets/events/cryptocountdown/3.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Computative Programming",
+      "description": "Focuses on problem-solving, algorithms, and competitive programming challenges.",
+      "lead": "Sai Prasanna",
+      "co_leads": ["Ch Likitha"],
+      "events": [
+        {
+          "name": "Output Unveiled",
+          "date": "7th December 2024",
+          "description": "Output Unveiled was an intense coding contest where participants solved 16 programming challenges in C and C++, unlocking each level with the output of the previous question. It tested logical thinking, debugging, and problem-solving skills.",
+          "participants": 60,
+          "images": {
+            "image1": "src/assets/events/outputunvieled/1.jpg",
+            "image2": "src/assets/events/outputunvieled/2.jpg",
+            "image3": "src/assets/events/outputunvieled/3.jpg"
+          }
+        },
+        {
+          "name": "PyMind",
+          "date": "7th December 2024",
+          "description": "PyMind was an engaging Python-based quiz competition for first-year students. Covering basic to advanced Python topics, the quiz provided a competitive yet supportive environment to test and enhance programming skills.",
+          "participants": 50,
+          "images": {
+            "image1": "src/assets/events/pymind/1.jpg",
+            "image2": "src/assets/events/pymind/2.jpg",
+            "image3": "src/assets/events/pymind/3.jpg"
+          }
+        },
+        {
+          "name": "Master The Code",
+          "date": "14th Feb 2025",
+          "description": "A timed coding competition with algorithmic challenges to test participants' problem-solving skills and coding speed.",
+          "participants": 40,
+          "images": {
+            "image1": "src/assets/events/masterthecode/1.jpg",
+            "image2": "src/assets/events/masterthecode/2.jpg",
+            "image3": "src/assets/events/masterthecode/3.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cloud Computing",
+      "description": "Covers cloud services, deployment, and scaling applications.",
+      "lead": "Asmitha",
+      "co_leads": ["Sarat"],
+      "events": []
+    },
+    {
+      "name": "Cyber Security",
+      "description": "Focuses on ethical hacking, cryptography, and securing applications.",
+      "lead": "Vamsidhar Reddy",
+      "co_leads": ["Harsha Vardhan", "Hari Hara Charan"],
+      "events": [
+        {
+          "name": "Cyber Hive",
+          "date": "30th November 2024",
+          "description": "Cyber Hive was an interactive seminar focused on cybersecurity awareness, scam prevention, and career opportunities in cybersecurity and networking. It featured live demonstrations of security threats and best practices for digital safety.",
+          "participants": 40,
+          "images": {
+            "image1": "src/assets/events/cyberhive/1.jpg",
+            "image2": "src/assets/events/cyberhive/2.jpg",
+            "image3": "src/assets/events/cyberhive/3.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Data Analytics",
+      "description": "Covers data visualization, machine learning, and big data analytics.",
+      "lead": "Navya Sri",
+      "co_leads": [""],
+      "events": []
+    },
+    {
+      "name": "DSA",
+      "description": "Focuses on data structures and algorithms for efficient problem-solving.",
+      "lead": "Lakshmi Raj",
+      "co_leads": ["Vasundhara", "Sai Bhargavi"],
+      "events": [
+        {
+          "name": "Output Unveiled",
+          "date": "7th December 2024",
+          "description": "Output Unveiled was an intense coding contest where participants solved 16 programming challenges in C and C++, unlocking each level with the output of the previous question. It tested logical thinking, debugging, and problem-solving skills.",
+          "participants": 60,
+          "images": {
+            "image1": "src/assets/events/outputunvieled/1.jpg",
+            "image2": "src/assets/events/outputunvieled/2.jpg",
+            "image3": "src/assets/events/outputunvieled/3.jpg"
+          }
+        },
+        {
+          "name": "PyMind",
+          "date": "7th December 2024",
+          "description": "PyMind was an engaging Python-based quiz competition for first-year students. Covering basic to advanced Python topics, the quiz provided a competitive yet supportive environment to test and enhance programming skills.",
+          "participants": 50,
+          "images": {
+            "image1": "src/assets/events/pymind/1.jpg",
+            "image2": "src/assets/events/pymind/2.jpg",
+            "image3": "src/assets/events/pymind/3.jpg"
+          }
+        },
+        {
+          "name": "Master The Code",
+          "date": "14th Feb 2025",
+          "description": "A timed coding competition with algorithmic challenges to test participants' problem-solving skills and coding speed.",
+          "participants": 40,
+          "images": {
+            "image1": "src/assets/events/masterthecode/1.jpg",
+            "image2": "src/assets/events/masterthecode/2.jpg",
+            "image3": "src/assets/events/masterthecode/3.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Networking",
+      "description": "Covers network protocols, security, and system communication.",
+      "lead": "S S Poojitha",
+      "co_leads": ["Riishhe Sree", "Kishore"],
+      "events": [
+        {
+          "name": "Cyber Hive",
+          "date": "30th November 2024",
+          "description": "Cyber Hive was an interactive seminar focused on cybersecurity awareness, scam prevention, and career opportunities in cybersecurity and networking. It featured live demonstrations of security threats and best practices for digital safety.",
+          "participants": 40,
+          "images": {
+            "image1": "src/assets/events/cyberhive/1.jpg",
+            "image2": "src/assets/events/cyberhive/2.jpg",
+            "image3": "src/assets/events/cyberhive/3.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Web Development",
+      "description": "Explores frontend and backend web technologies.",
+      "lead": "Varma",
+      "co_leads": ["Sai Reshmitha", "Bharat"],
+      "events": [
+        {
+          "name": "GET GIT GO – Master Version Control",
+          "date": "7th February 2025",
+          "description": "A structured, practical workshop on Git and GitHub, including real-world applications and best practices.",
+          "participants": 50,
+          "images": {
+            "image1": "src/assets/events/getgitgo/1.jpg",
+            "image2": "src/assets/events/getgitgo/2.jpg",
+            "image3": "src/assets/events/getgitgo/3.jpg"
+          }
+        }
+      ]
+    }
+  ]
+}
