@@ -1,160 +1,113 @@
+/* General Team Container */
 .team {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    padding: 0 150px;
+    align-items: center;
+    padding: 60px 40px;
+    color: #f8fafc;
 }
 
+/* Heading */
 .team-head {
-    
     font-size: 3rem;
-    font-weight: 700;
-    transition: all 0.3s ease-in-out;
-    text-align: right;
-    margin: 0 70px;
-    color: #d9d9d9;
-    margin-top: 5%;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #38bdf8;
+    letter-spacing: 2px;
+    position: relative;
+}
+.team-head::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #38bdf8;
+    border-radius: 2px;
 }
 
-/* Faculty tab */
-
+/* Faculty Section */
 .team-faculty-cont {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
 }
 
-.hod-cont {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 250px;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-    margin: 20px;
+.hod-cont, .faculty-cont {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hod-cont:hover, .faculty-cont:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.3);
 }
 
 .hod-cont h1 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    transition: all 0.3s ease-in-out;
-    text-wrap: wrap;
-    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #fcd34d;
 }
 
-.hod {
-    width: 250px;
-    height: 460px;
-    transition: all 0.3s ease-in-out;
-    margin: 20px;
+.hod, .faculty {
+    width: 230px;
+    height: 300px;
+    object-fit: cover;
     border-radius: 10px;
+    border: 3px solid transparent;
+
 }
 
-.faculty-cont {
+/* Student Scroll Section */
+.student-scroll {
+    background-color: #0e7490;
+    padding: 12px 0;
+    margin-bottom: 40px;
+}
+.custom-scroll-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* Students Team Section */
+.students-team {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    width: 250px;
-
-    flex-direction: column;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-    margin: 10px;
+    justify-content: center;
 }
 
-.faculty {
-    background-color: #d9d9d9;
-    width: 250px;
-    height: 250px;
-    transition: all 0.3s ease-in-out;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-
-/* Responsive styles */
+/* Responsive Styling */
 @media (max-width: 1200px) {
-    .team {
-        padding: 0 100px;
-    }
-
-    .team-head {
-        font-size: 2.5rem;
-        margin: 0 50px;
-    }
-
     .hod, .faculty {
         width: 200px;
-        height: auto;
-    }
-
-    .hod-cont, .faculty-cont {
-        width: 200px;
-    }
-
-    .hod-cont h1 {
-        font-size: 1.5rem;
+        height: 260px;
     }
 }
 
 @media (max-width: 768px) {
-    .team {
-        padding: 0 50px;
-        flex-direction: column;
-    }
-
     .team-head {
-        font-size: 2rem;
-        margin: 0 30px;
-        text-align: center;
+        font-size: 2.2rem;
     }
-
     .hod, .faculty {
-        width: 150px;
-        height: auto;
-    }
-
-    .hod-cont, .faculty-cont {
-        width: 150px;
-    }
-
-    .hod-cont h1 {
-        font-size: 1.25rem;
+        width: 160px;
+        height: 220px;
     }
 }
 
 @media (max-width: 480px) {
-    .team {
-        padding: 0 20px;
-    }
-
     .team-head {
-        font-size: 1.5rem;
-        margin: 0 10px;
+        font-size: 1.6rem;
     }
-
     .hod, .faculty {
-        width: 100px;
-        height: auto;
+        width: 120px;
+        height: 160px;
     }
-
-    .hod-cont, .faculty-cont {
-        width: 100px;
-    }
-
-    .hod-cont h1 {
-        font-size: 1rem;
-    }
-}
-
-/* Student Tab */
-
-
-.student-scroll {
-    background-color: #004468;
-    height: max-content;
-}
-
-.custom-scroll-text {
-    font-size: 2rem;
 }
