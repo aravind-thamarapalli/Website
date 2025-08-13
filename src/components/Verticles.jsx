@@ -22,6 +22,8 @@ const Verticles = () => {
         <Masonry data={data} />
       </div>
     </div>
+
+    
   )
 }
 

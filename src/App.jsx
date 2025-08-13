@@ -9,12 +9,13 @@ import Contact from './components/Contact'
 import './App.css'
 import About from './components/About'
 import EventDetails from './components/EventDetails'
+import NavbarComponent from './components/NavbarComponent'
 
 function App() {
 
   return (
     <>
-      
+      <NavbarComponent />
       <Routes>
         <Route path='/' element={<div><Home />
       <About />
