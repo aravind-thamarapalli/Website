@@ -1,5 +1,5 @@
 import React from "react";
-import InfiniteScroll from "./InfiniteScroll";
+import { InfiniteScroll } from "../animations";
 import "./Event.css";
 
 const Event = () => {
@@ -21,7 +21,7 @@ const Event = () => {
   return (
     <div className="events-page">
       <h1 className="event-title">Events</h1>
-      <div style={{ height: "500px", positon: "relative" }}>
+      <div style={{ height: "100vh", positon: "relative" }}>
         <InfiniteScroll
           items={items}
           isTilted={true}

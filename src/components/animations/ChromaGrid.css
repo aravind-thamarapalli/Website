@@ -3,7 +3,7 @@
   width: 100%;
   height: max-content;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Default: 4 equal columns */
+  grid-template-columns: repeat(var(--cols, 4), 1fr); /* Dynamic columns, default: 4 */
   grid-auto-rows: auto;
   justify-items: center; /* Center cards in their cells */
   background: transparent;
@@ -16,6 +16,7 @@
   --x: 50%;
   --y: 50%;
   --r: 220px;
+  --cols: 4; /* Default value */
 }
 
 /* Tablet view: 2–3 cards */

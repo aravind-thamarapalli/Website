@@ -1,13 +1,39 @@
 /* Navbar container */
 .custom-navbar {
-  background: transparent;
-  margin-top: 50px;
-  margin-bottom: -40px;
+  background: rgb(0, 32, 50, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: space-around; /* ✅ Brand left, links right */
-  padding: 0.5rem 1rem;
-  position: relative;
+  padding: 0.75rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+/* Brand logo link */
+.brand-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+/* Logo image */
+.navbar-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
 }
 
 /* Brand text */
@@ -33,7 +59,7 @@
 }
 
 .nav-link:hover {
-  color: #00bcd4;
+  color: rgb(0, 188, 212);
 }
 
 /* Toggle button (hidden on desktop) */
@@ -55,13 +81,15 @@
   .navbar-links {
     display: none;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
     padding: 1rem;
-    position: absolute;
-    top: 60px;
-    right: 0;
+    position: fixed;
+    top: 70px;
+    right: 1rem;
     border-radius: 8px;
     gap: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   }
 
   .navbar-links.active {

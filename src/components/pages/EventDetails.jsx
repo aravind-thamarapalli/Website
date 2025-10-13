@@ -1,13 +1,10 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import events from "../events.json";
+import events from "../../events.json";
 import "./EventDetails.css";
-import ShinyText from "./ShinyText";
+import { ShinyText, CountUp } from "../ui";
 import { useRef } from "react";
-import VariableProximity from "./VariableProximity";
-import CountUp from "./CountUp";
-import Stepper, { Step } from "./Stepper";
-import ScrollVelocity from "./Scrollvelocity.jsx";
+import { VariableProximity, Stepper, Step, ScrollVelocity } from "../animations";
 import { FaArrowLeft } from "react-icons/fa";
 
 const EventDetails = () => {

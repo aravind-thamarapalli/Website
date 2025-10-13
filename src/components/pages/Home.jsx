@@ -1,7 +1,6 @@
 import React from "react";
 import { Typewriter, Cursor } from "react-simple-typewriter";
-import TiltedCard from "./TiltedCard";
-import SpotlightCard from "./SpotlightCard";
+import { TiltedCard, SpotlightCard } from "../ui";
 import "./Home.css";
 import { Navigate, useNavigate } from "react-router-dom";
 

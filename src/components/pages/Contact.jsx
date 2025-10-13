@@ -1,7 +1,10 @@
+import React from "react";
 import styled from "styled-components";
 import { Instagram, Github, Linkedin, Star } from "lucide-react";
+import { SiLinktree } from "react-icons/si";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
+// ====== Styled Components ======
 const ContactWrapper = styled.div`
   font-family: "Outfit", serif;
   display: flex;
@@ -167,19 +170,39 @@ const SocialIcons = styled.div`
   }
 `;
 
+// ====== Component ======
 export default function Contact() {
   return (
     <ContactWrapper>
+      {/* Form Section */}
       <FormSection>
-        <Form onSubmit={(e) => e.preventDefault()}>
-          <Input type="text" placeholder="Your Name" />
-          <NoroundInput type="email" placeholder="Email" />
-          <TextArea placeholder="Message" />
+        <Form
+          onSubmit={(e) => {
+            e.preventDefault();
+            const name = e.target[0].value;
+            const email = e.target[1].value;
+            const message = e.target[2].value;
+
+            // Construct Gmail compose link
+            const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=asci_hub@gvpce.ac.in&su=${encodeURIComponent(
+              `Message from ${name}`
+            )}&body=${encodeURIComponent(
+              `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+            )}`;
+
+            // Open Gmail in new tab
+            window.open(gmailLink, "_blank");
+          }}
+        >
+          <Input type="text" placeholder="Your Name" required />
+          <NoroundInput type="email" placeholder="Email" required />
+          <TextArea placeholder="Message" required />
           <EmptyInput disabled />
-          <Button type="submit">Send Us</Button>
+          <Button type="submit">Mail Us</Button>
         </Form>
       </FormSection>
 
+      {/* Content Section */}
       <ContentSection>
         <Title>
           CONTACT
@@ -194,21 +217,22 @@ export default function Contact() {
           <span>O</span>
           <span>N</span>
         </Subtitle>
+
         <SocialIcons>
-          <a href="#" aria-label="Instagram">
+          <a href="https://www.instagram.com/asci_gvpcoe/#" aria-label="Instagram">
             <Instagram size={24} />
           </a>
-          <a href="#" aria-label="Github">
+          <a href="https://github.com/AsCI-Association-of-Computer-Intellects" aria-label="Github">
             <Github size={24} />
           </a>
-          <a href="#" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/company/asci-association-of-computer-intellects/" aria-label="LinkedIn">
             <Linkedin size={24} />
           </a>
-          <a href="#" aria-label="WhatsApp">
+          <a href="https://www.whatsapp.com/channel/0029VayiNtSCcW4l69MzUC1P" aria-label="WhatsApp">
             <WhatsAppIcon fontSize="large" />
           </a>
-          <a href="#" aria-label="Linkedtree">
-            <Star size={24} />
+          <a href="https://linktr.ee/Asci_gvpce" aria-label="Linktree">
+            <SiLinktree size={24} />
           </a>
         </SocialIcons>
       </ContentSection>

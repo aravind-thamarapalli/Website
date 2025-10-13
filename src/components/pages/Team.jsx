@@ -1,8 +1,5 @@
 import React from "react";
-import ScrollVelocity from "./Scrollvelocity.jsx";
-import CircularGallery from './CircularGallery'
-import ChromaGrid from './ChromaGrid'
-
+import { ScrollVelocity, CircularGallery, ChromaGrid } from '../animations';
 import "./Team.css";
 
 const Team = () => {
@@ -15,7 +12,7 @@ const items = [
     handle: "@lavanya",
     borderColor: "#FF6B6B",
     gradient: "linear-gradient(145deg, #FF6B6B, #000)",
-    url: "https://example.com/lavanya"
+    url: "https://www.linkedin.com/in/lavanya-bethina/"
   },
   {
     image: "src/assets/photos/aravind.jpg",
@@ -24,7 +21,7 @@ const items = [
     handle: "@aravind",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://example.com/aravind"
+    url: "https://linkedin.com/in/aravind-tham"
   },
   {
     image: "src/assets/photos/fathima.jpg",
@@ -33,7 +30,7 @@ const items = [
     handle: "@fathima",
     borderColor: "#10B981",
     gradient: "linear-gradient(145deg, #10B981, #000)",
-    url: "https://example.com/fathima"
+    url: "https://www.linkedin.com/in/tatheer-fathima-5ba16b275/"
   },
   {
     image: "src/assets/photos/laxmi.jpg",
@@ -42,7 +39,7 @@ const items = [
     handle: "@laxmi",
     borderColor: "#F59E0B",
     gradient: "linear-gradient(145deg, #F59E0B, #000)",
-    url: "https://example.com/laxmi"
+    url: "https://www.linkedin.com/in/laxmikandivalasa/"
   },
   {
     image: "src/assets/photos/moenuddin.jpg",
@@ -51,7 +48,7 @@ const items = [
     handle: "@moenuddin",
     borderColor: "#8B5CF6",
     gradient: "linear-gradient(145deg, #8B5CF6, #000)",
-    url: "https://example.com/moenuddin"
+    url: "https://www.linkedin.com/in/mohammad-moeenuddin-558846226/"
   },
   {
     image: "src/assets/photos/asmitha.jpg",
@@ -60,7 +57,7 @@ const items = [
     handle: "@asmitha",
     borderColor: "#06B6D4",
     gradient: "linear-gradient(145deg, #06B6D4, #000)",
-    url: "https://example.com/asmitha"
+    url: "https://www.linkedin.com/in/ashmitha-yenimireddy-617581290/"
   },
   {
     image: "src/assets/photos/prasanna.jpg",
@@ -69,16 +66,16 @@ const items = [
     handle: "@prasanna",
     borderColor: "#EC4899",
     gradient: "linear-gradient(145deg, #EC4899, #000)",
-    url: "https://example.com/prasanna"
+    url: "https://www.linkedin.com/in/sai-prasanna-kotipatruni-307533254/"
   },
   {
     image: "src/assets/photos/vamsi.jpg",
-    title: "Vamsi",
+    title: "Vamsidhar Reddy",
     subtitle: "CYBER SECURITY LEAD",
     handle: "@vamsi",
     borderColor: "#0EA5E9",
     gradient: "linear-gradient(145deg, #0EA5E9, #000)",
-    url: "https://example.com/vamsi"
+    url: "https://www.linkedin.com/in/venkata-vamsidhar-reddy-gajjala-a3409725a/"
   },
   {
     image: "src/assets/photos/navyasri.jpg",
@@ -87,7 +84,7 @@ const items = [
     handle: "@navyasri",
     borderColor: "#A855F7",
     gradient: "linear-gradient(145deg, #A855F7, #000)",
-    url: "https://example.com/navyasri"
+    url: "https://www.linkedin.com/in/navyasri-rajanala-43049b277/"
   },
   {
     image: "src/assets/photos/lakshmiraj.jpg",
@@ -96,7 +93,7 @@ const items = [
     handle: "@lakshmiraj",
     borderColor: "#F97316",
     gradient: "linear-gradient(145deg, #F97316, #000)",
-    url: "https://example.com/lakshmiraj"
+    url: "https://www.linkedin.com/in/lakshmirajvagu/"
   },
   {
     image: "src/assets/photos/poojitha.jpg",
@@ -105,7 +102,7 @@ const items = [
     handle: "@poojitha",
     borderColor: "#14B8A6",
     gradient: "linear-gradient(145deg, #14B8A6, #000)",
-    url: "https://example.com/poojitha"
+    url: "https://www.linkedin.com/in/sarvamangala-poojitha-115742262/"
   },
   {
     image: "src/assets/photos/varma.jpg",
@@ -114,7 +111,7 @@ const items = [
     handle: "@varma",
     borderColor: "#2563EB",
     gradient: "linear-gradient(145deg, #2563EB, #000)",
-    url: "https://example.com/varma"
+    url: "https://www.linkedin.com/in/varma-sagi-89a024253/"
   },
   {
     image: "src/assets/photos/yamini.jpg",
@@ -123,7 +120,7 @@ const items = [
     handle: "@yamini",
     borderColor: "#D946EF",
     gradient: "linear-gradient(145deg, #D946EF, #000)",
-    url: "https://example.com/yamini"
+    url: "https://www.linkedin.com/in/yamini-reddipilli/"
   },
   {
     image: "src/assets/photos/suvarna.jpg",
@@ -132,7 +129,7 @@ const items = [
     handle: "@suvarna",
     borderColor: "#F43F5E",
     gradient: "linear-gradient(145deg, #F43F5E, #000)",
-    url: "https://example.com/suvarna"
+    url: "https://www.linkedin.com/in/sarada-suvarna-tekumalla-107400254/"
   },
   {
     image: "src/assets/photos/harisai.jpg",
@@ -141,16 +138,16 @@ const items = [
     handle: "@harisai",
     borderColor: "#0D9488",
     gradient: "linear-gradient(145deg, #0D9488, #000)",
-    url: "https://example.com/harisai"
+    url: "https://www.linkedin.com/in/harisai-surishetti/"
   },
   {
     image: "src/assets/photos/kushal.jpg",
-    title: "Kushal",
+    title: "Kushal Sai",
     subtitle: "DISCIPLINE LEAD",
     handle: "@kushal",
     borderColor: "#9333EA",
     gradient: "linear-gradient(145deg, #9333EA, #000)",
-    url: "https://example.com/kushal"
+    url: "https://www.linkedin.com/in/kushal-sai2118/"
   }
 ];
 
@@ -162,7 +159,16 @@ const faculty = [
     handle: "@cvgururao",
     borderColor: "#5533eaff",
     gradient: "linear-gradient(145deg, #5533eaff, #000)",
-    url: "https://example.com/cvgururao"
+    url: "https://www.linkedin.com/in/gurucvrao/"
+  },
+  {
+    image: "src/assets/photos/KBMadhuri.jpg",
+    title: "Dr. K.B.Madhuri",
+    subtitle: "Professor & Dean, School of CSE, IT & CA",
+    handle: "@kbmadhuri",
+    borderColor: "#eadb33ff",
+    gradient: "linear-gradient(145deg, #eadb33ff, #000)",
+    // url: "https://www.linkedin.com/in/example/"
   },
   {
     image: "src/assets/photos/Ajay.jpg",
@@ -171,16 +177,16 @@ const faculty = [
     handle: "@ajay",
     borderColor: "#ea8533ff",
     gradient: "linear-gradient(145deg, #ea8533ff, #000)",
-    url: "https://example.com/ajay"
+    // url: "https://example.com/ajay"
   },
   {
     image: "src/assets/photos/seetalakshmi.jpg",
     title: "Sathee Lakshmi",
     subtitle: "Assistant Professor",
-    handle: "@seethalakshmi",
+    handle: "@satheelakshmi",
     borderColor: "#ea3367ff",
     gradient: "linear-gradient(145deg, #ea3367ff, #000)",
-    url: "https://example.com/seethalakshmi"
+    // url: "https://example.com/seethalakshmi"
   },
   {
     image: "src/assets/photos/leteefa.jpg",
@@ -189,7 +195,7 @@ const faculty = [
     handle: "@lateefa",
     borderColor: "#33eab0ff",
     gradient: "linear-gradient(145deg, #33eab0ff, #000)",
-    url: "https://example.com/lateefa"
+    // url: "https://example.com/lateefa"
   }
 ]
 
@@ -198,9 +204,18 @@ const faculty = [
     <>
       <div className="team">
         <h2 className="team-head">MEET OUR TEAM</h2>
-        <div style={{ height: '400px', position: 'relative' }}>
+        <div style={{ 
+          height: '420px', 
+          position: 'relative',
+          overflowX: 'auto',
+          overflowY: 'hidden',
+          padding: '1rem 0',
+          scrollbarWidth: 'thin',
+          scrollbarColor: '#64b8e6 rgba(255, 255, 255, 0.1)'
+        }}>
           <ChromaGrid 
             items={faculty}
+            columns={5}
             radius={300}
             damping={0.45}
             fadeOut={0.6}
@@ -209,7 +224,7 @@ const faculty = [
         </div>
       </div>
       <div className="student-scroll">
-        <ScrollVelocity texts={["Board •"]} className="custom-scroll-text" />
+        <ScrollVelocity texts={[" Board (2024-25) •"]} className="custom-scroll-text" />
       </div>
       <div className="students-team">
         {/* <div style={{ height: '600px', position: 'relative' }}>
@@ -219,6 +234,7 @@ const faculty = [
           <ChromaGrid 
             items={items}
             radius={300}
+            columns={4}
             damping={0.45}
             fadeOut={0.6}
             ease="power3.out"

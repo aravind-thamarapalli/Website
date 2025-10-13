@@ -1,10 +1,8 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import BlurText from "./BlurText";
-import ShinyText from "./ShinyText";
-import Stack from "./Stack";
-import CountUp from "./CountUp";
-import Domain from "../domains.json";
+import { BlurText, ShinyText, CountUp } from "../ui";
+import { Stack } from "../animations";
+import Domain from "../../domains.json";
 import "./Verticle.css";
 
 const Verticle = () => {

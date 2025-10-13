@@ -1,0 +1,9 @@
+export { default as Home } from './Home';
+export { default as About } from './About';
+export { default as Team } from './Team';
+export { default as Event } from './Event';
+export { default as EventDetails } from './EventDetails';
+export { default as Verticle } from './Verticle';
+export { default as Verticles } from './Verticles';
+export { default as Contact } from './Contact';
+export { default as Upcoming } from './Upcoming';

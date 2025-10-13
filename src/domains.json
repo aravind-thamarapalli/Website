@@ -4,7 +4,7 @@
       "name": "Blockchain",
       "description": "Explores decentralized technologies, smart contracts, and blockchain applications.",
       "lead": "Md Moinuddin",
-      "co_leads": ["Prasanna"],
+      "co_leads": ["Prasanna Villa"],
       "events": [
         {
           "name": "Crypto Countdown: Final Block of 2024",
@@ -23,7 +23,7 @@
       "name": "Computative Programming",
       "description": "Focuses on problem-solving, algorithms, and competitive programming challenges.",
       "lead": "Sai Prasanna",
-      "co_leads": ["Ch Likitha"],
+      "co_leads": ["Ch Likitha", "Rushitha Datta"],
       "events": [
         {
           "name": "Output Unveiled",
@@ -90,14 +90,14 @@
       "name": "Data Analytics",
       "description": "Covers data visualization, machine learning, and big data analytics.",
       "lead": "Navya Sri",
-      "co_leads": [""],
+      "co_leads": ["Kishore", "Bhaskar"],
       "events": []
     },
     {
       "name": "DSA",
       "description": "Focuses on data structures and algorithms for efficient problem-solving.",
       "lead": "Lakshmi Raj",
-      "co_leads": ["Vasundhara", "Sai Bhargavi"],
+      "co_leads": ["Vasundhara", "Uhanjani"],
       "events": [
         {
           "name": "Output Unveiled",
@@ -138,7 +138,7 @@
       "name": "Networking",
       "description": "Covers network protocols, security, and system communication.",
       "lead": "S S Poojitha",
-      "co_leads": ["Riishhe Sree", "Kishore"],
+      "co_leads": ["Riishhe Sree", "Ramjanvali"],
       "events": [
         {
           "name": "Cyber Hive",

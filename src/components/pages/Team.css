@@ -7,6 +7,32 @@
     color: #f8fafc;
 }
 
+/* Custom Scrollbar for Faculty Section */
+.team > div::-webkit-scrollbar {
+    height: 8px;
+}
+
+.team > div::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.team > div::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #64b8e6, #38bdf8);
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.team > div::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+}
+
+/* Smooth scroll behavior */
+.team > div {
+    scroll-behavior: smooth;
+}
+
 /* Heading */
 .team-head {
     font-size: 3rem;
