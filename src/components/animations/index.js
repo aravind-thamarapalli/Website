@@ -6,3 +6,4 @@ export { default as Stepper, Step } from './Stepper';
 export { default as CircularGallery } from './CircularGallery';
 export { default as ChromaGrid } from './ChromaGrid';
 export { default as Masonry } from './Masonry';
+export { default as Carousel } from './Carousel';

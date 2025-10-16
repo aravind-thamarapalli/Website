@@ -5,7 +5,7 @@
 }
 
 .verticle-title {
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -14,93 +14,170 @@
 .verticle-description {
     font-size: 2rem;
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
-.verticle-1 {
-    display: flex;
-    flex-direction: row;
+.team-section {
+    margin-bottom: 3rem;
 }
 
-.verticle-11 {
+.team-header {
     display: flex;
-    flex-direction: column;
-    width: 50vw;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .team-title {
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin: 0;
 }
 
-.team-lead {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #369CD3;
+.team-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.team-co-leads {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.team-member-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #369CD3;
+    transition: all 0.3s ease;
+}
+
+.team-member-image:hover {
+    transform: scale(1.1);
+    border-color: #64b8e6;
+    box-shadow: 0 0 20px rgba(100, 184, 230, 0.5);
+}
+
+.team-member-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #d9d9d9;
+    margin: 0;
+    text-align: center;
+}
+
+.team-member-role {
+    font-size: 0.9rem;
+    font-weight: 400;
     color: #369CD3;
+    margin: 0;
+    text-align: center;
 }
 
 .events-section {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    border: 2px solid #0043;
-    border-radius: 10px;
 }
 
 .events-title {
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .events-list {
     display: flex;
     flex-direction: column;
-    height: 400px;
-    overflow-y: scroll;
-}
-
-.events-list::-webkit-scrollbar {
-    width: 6px;
-}
-
-.events-list::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.events-list::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 6px;
-}
-
-.events-list::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    gap: 3rem;
 }
 
 .event-item {
     font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 1rem;
+    border: 2px solid rgba(100, 184, 230, 0.3);
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.event-item:hover {
+    border-color: rgba(100, 184, 230, 0.6);
+    box-shadow: 0 5px 20px rgba(100, 184, 230, 0.2);
+}
+
+.event-item-open {
+    border-color: rgba(100, 184, 230, 0.6);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.event-header:hover {
+    background: rgba(100, 184, 230, 0.1);
+}
+
+.event-header-content {
+    flex: 1;
+}
+
+.event-toggle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64b8e6;
+    transition: transform 0.3s ease;
+    margin-left: 1rem;
+}
+
+.event-toggle-icon svg {
+    transition: transform 0.3s ease;
+}
+
+.icon-rotated {
+    transform: rotate(180deg);
+}
+
+.event-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+    padding: 0 2rem;
+}
+
+.event-content-open {
+    max-height: 2000px;
+    opacity: 1;
+    padding: 0 2rem 2rem 2rem;
 }
 
 .event-name {
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 600;
+    margin: 0 0 0.25rem 0;
 }
 
 .event-date {
-    font-size: 1.25rem;
+    font-size: 0.9rem;
     font-weight: 400;
     color: #369CD3;
+    margin: 0;
 }
 
 .event-description {
@@ -134,7 +211,7 @@
         margin: 0 50px;
     }
     .verticle-title {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .verticle-description {
         font-size: 1.75rem;
@@ -145,20 +222,18 @@
     .team-lead, .team-co-leads {
         font-size: 2rem;
     }
+    .team-member-image {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media (max-width: 768px) {
     .verticle {
         margin: 0 20px;
     }
-    .verticle-1 {
-        flex-direction: column;
-    }
-    .verticle-11 {
-        width: 100%;
-    }
     .verticle-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .verticle-description {
         font-size: 1.5rem;
@@ -166,8 +241,24 @@
     .team-title, .events-title {
         font-size: 2rem;
     }
-    .team-lead, .team-co-leads {
-        font-size: 1.75rem;
+    .team-images {
+        gap: 1.5rem;
+    }
+    .team-member-image {
+        width: 90px;
+        height: 90px;
+    }
+    .event-header {
+        padding: 1.25rem 1.5rem;
+    }
+    .event-content {
+        padding: 0 1.5rem;
+    }
+    .event-content-open {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+    .event-name {
+        font-size: 1.5rem;
     }
 }
 
@@ -176,7 +267,7 @@
         margin: 0 10px;
     }
     .verticle-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .verticle-description {
         font-size: 1.25rem;
@@ -184,8 +275,8 @@
     .team-title, .events-title {
         font-size: 1.75rem;
     }
-    .team-lead, .team-co-leads {
-        font-size: 1.5rem;
+    .team-images {
+        gap: 1rem;
     }
     .event-name {
         font-size: 1.5rem;
@@ -195,5 +286,37 @@
     }
     .event-description, .event-participants, .event-participants-count {
         font-size: 0.875rem;
+    }
+    .team-member-image {
+        width: 80px;
+        height: 80px;
+    }
+    .team-member-name {
+        font-size: 0.9rem;
+    }
+    .team-member-role {
+        font-size: 0.8rem;
+    }
+    .event-header {
+        padding: 1rem 1.25rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .event-toggle-icon {
+        align-self: flex-end;
+        margin-top: 0.5rem;
+        margin-left: 0;
+    }
+    .event-content {
+        padding: 0 1.25rem;
+    }
+    .event-content-open {
+        padding: 0 1.25rem 1.25rem 1.25rem;
+    }
+    .event-name {
+        font-size: 1.25rem;
+    }
+    .event-date {
+        font-size: 0.9rem;
     }
 }

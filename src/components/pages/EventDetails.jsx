@@ -4,7 +4,7 @@ import events from "../../events.json";
 import "./EventDetails.css";
 import { ShinyText, CountUp } from "../ui";
 import { useRef } from "react";
-import { VariableProximity, Stepper, Step, ScrollVelocity } from "../animations";
+import { VariableProximity, Carousel, ScrollVelocity } from "../animations";
 import { FaArrowLeft } from "react-icons/fa";
 
 const EventDetails = () => {
@@ -17,6 +17,16 @@ const EventDetails = () => {
   if (!event) {
     return <div>Event not found</div>;
   }
+
+  // Prepare images for carousel
+  const carouselImages = event.images
+    ? Object.keys(event.images)
+        .filter((key) => event.images[key])
+        .map((key, idx) => ({
+          id: idx + 1,
+          img: event.images[key],
+        }))
+    : [];
 
   return (
     <div className="event-details-container">
@@ -59,59 +69,15 @@ const EventDetails = () => {
           </p>
         </div>
         <div className="event-details-2">
-          <Stepper
-            initialStep={1}
-            onStepChange={(step) => {
-              console.log(step);
-            }}
-            onFinalStepCompleted={() => console.log("All steps completed!")}
-            backButtonText="Previous"
-            nextButtonText="Next"
-          >
-            <Step>
-              <img
-                style={{
-                  height: "300px",
-                  width: "100%",
-                  objectFit: "cover",
-                  objectPosition: "center -70px",
-                  borderRadius: "15px",
-                  marginTop: "1em",
-                }}
-                src={event.images.image1}
-              />
-            </Step>
-            <Step>
-              <img
-                style={{
-                  height: "300px",
-                  width: "100%",
-                  objectFit: "cover",
-                  objectPosition: "center -70px",
-                  borderRadius: "15px",
-                  marginTop: "1em",
-                }}
-                src={event.images.image2}
-              />
-            </Step>
-            <Step>
-              <img
-                style={{
-                  height: "300px",
-                  width: "100%",
-                  objectFit: "cover",
-                  objectPosition: "center -70px",
-                  borderRadius: "15px",
-                  marginTop: "1em",
-                }}
-                src={event.images.image3}
-              />
-            </Step>
-          </Stepper>
+          {carouselImages.length > 0 ? (
+            <Carousel images={carouselImages} autoPlayInterval={5000} />
+          ) : (
+            <p className="no-images">No images available</p>
+          )}
         </div>
       </div>
       <div className="event-footer">
-        <ScrollVelocity texts={[`done by ${event.domain}`]} className="custom-scroll-text" />
+        <ScrollVelocity texts={[`* done by ${event.domain}`]} className="custom-scroll-text" />
       </div>
     </div>
   );

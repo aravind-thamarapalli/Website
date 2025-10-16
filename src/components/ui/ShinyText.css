@@ -12,7 +12,7 @@
     display: inline-block;
     animation: shine 5s linear infinite;
   }
-  
+
   @keyframes shine {
     0% {
       background-position: 100%;

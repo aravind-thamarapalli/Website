@@ -1,6 +1,8 @@
 .pill-nav-container {
-  position: absolute;
+  position: fixed;
   top: 1em;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 99;
 }
 
@@ -8,6 +10,7 @@
   .pill-nav-container {
     width: 100%;
     left: 0;
+    transform: translateX(0);
   }
 }
 
@@ -15,6 +18,7 @@
   --nav-h: 42px;
   --logo: 36px;
   --pill-pad-x: 18px;
+  --pill-pad-y: 8px;
   --pill-gap: 3px;
   width: max-content;
   display: flex;
@@ -36,20 +40,27 @@
   display: flex;
   align-items: center;
   height: var(--nav-h);
-  background: var(--base, #000);
+  background: rgba(0, 32, 50, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 9999px;
+  padding: 5px;
 }
 
 .pill-logo {
-  width: var(--nav-h);
-  height: var(--nav-h);
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background: var(--base, #000);
-  padding: 8px;
+  background: rgba(0, 32, 50, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  margin-right: 8px;
 }
 
 .pill-logo img {

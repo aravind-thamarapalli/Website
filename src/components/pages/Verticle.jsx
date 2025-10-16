@@ -1,19 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { BlurText, ShinyText, CountUp } from "../ui";
-import { Stack } from "../animations";
+import { Carousel } from "../animations";
 import Domain from "../../domains.json";
 import "./Verticle.css";
 
 const Verticle = () => {
   const data = useLocation();
   const itemName = data.state?.item?.name; // Ensure safe access to item name
+  const [openEventIndex, setOpenEventIndex] = useState(null);
 
   const verticle = Domain.domains.find((domain) => domain.name === itemName); // Find the matching domain
 
   if (!verticle) {
     return <h1 className="domain-not-found">Domain not found</h1>;
   }
+
+  const toggleEvent = (index) => {
+    setOpenEventIndex(openEventIndex === index ? null : index);
+  };
 
   // Extract images correctly
   const images = verticle.events.map((event) =>
@@ -28,6 +33,7 @@ const Verticle = () => {
   );
 
   console.log("Extracted Images:", images); // Debugging log
+  console.log("Images length per event:", images.map(img => img.length));
 
   const handleAnimationComplete = () => {
     console.log("All letters have animated!");
@@ -45,52 +51,85 @@ const Verticle = () => {
       />
       <p className="verticle-description">{verticle.description}</p>
 
-      <div className="verticle-1">
-        <div className="verticle-11">
+      {/* Team Section */}
+      <div className="team-section">
+        <div className="team-header">
           <h2 className="team-title">Team</h2>
-          <h3 className="team-lead">
-            Lead:{" "}
-            <ShinyText
-              text={verticle.lead}
-              disabled={false}
-              speed={3}
-              className="custom-class"
-            />
-          </h3>
-          <h3 className="team-co-leads">
-            Co-Leads:{" "}
-            <span>
-              {verticle.co_leads.length > 0
-                ? verticle.co_leads.map((coLead, idx) => (
-                    <React.Fragment key={idx}>
-                      <ShinyText
-                        text={coLead}
-                        disabled={false}
-                        speed={3}
-                        className="custom-class"
-                      />
-                      {idx < verticle.co_leads.length - 1 && ", "}
-                    </React.Fragment>
-                  ))
-                : "None"}
-            </span>
-          </h3>
         </div>
+        <div className="team-images">
+          {verticle.lead_image && (
+            <div className="team-member">
+              <img 
+                src={verticle.lead_image} 
+                alt={verticle.lead}
+                className="team-member-image"
+              />
+              <ShinyText
+                text={verticle.lead}
+                disabled={false}
+                speed={3}
+                className="team-member-name"
+              />
+              <p className="team-member-role">Lead</p>
+            </div>
+          )}
+          {verticle.co_leads_images && verticle.co_leads_images.map((image, idx) => (
+            <div key={idx} className="team-member">
+              <img 
+                src={image} 
+                alt={verticle.co_leads[idx]}
+                className="team-member-image"
+              />
+              <ShinyText
+                text={verticle.co_leads[idx]}
+                disabled={false}
+                speed={3}
+                className="team-member-name"
+              />
+              <p className="team-member-role">Co-Lead</p>
+            </div>
+          ))}
+        </div>
+      </div>
 
-        <div className="events-section">
-          <h2 className="events-title">Events</h2>
-          <div className="events-list">
-            {verticle.events.map((event, idx) => (
-              <div key={idx} className="event-item">
-                <h3 className="event-name">
-                  <ShinyText
-                    text={event.name}
-                    disabled={false}
-                    speed={3}
-                    className="custom-class"
-                  />
-                </h3>
-                <p className="event-date">{event.date}</p>
+      {/* Events Section */}
+      <div className="events-section">
+        <h2 className="events-title">Events</h2>
+        <div className="events-list">
+          {verticle.events.map((event, idx) => (
+            <div key={idx} className={`event-item ${openEventIndex === idx ? 'event-item-open' : ''}`}>
+              <div className="event-header" onClick={() => toggleEvent(idx)}>
+                <div className="event-header-content">
+                  <h3 className="event-name">
+                    <ShinyText
+                      text={event.name}
+                      disabled={false}
+                      speed={3}
+                      className="custom-class"
+                    />
+                  </h3>
+                  <p className="event-date">{event.date}</p>
+                </div>
+                <div className="event-toggle-icon">
+                  <svg 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none"
+                    className={openEventIndex === idx ? 'icon-rotated' : ''}
+                  >
+                    <path 
+                      d="M6 9L12 15L18 9" 
+                      stroke="currentColor" 
+                      strokeWidth="2" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              
+              <div className={`event-content ${openEventIndex === idx ? 'event-content-open' : ''}`}>
                 <p className="event-description">{event.description}</p>
                 <p className="event-participants">
                   Participants:{" "}
@@ -104,20 +143,16 @@ const Verticle = () => {
                   />
                 </p>
                 {images[idx] && images[idx].length > 0 ? (
-                  <Stack
-                    randomRotation={true}
-                    sensitivity={180}
-                    sendToBackOnClick={false}
-                    cardDimensions={{ width: 400, height: 200 }}
-                    cardsData={images[idx]} // Pass the corrected images array
-                    className="event-images"
+                  <Carousel
+                    images={images[idx]}
+                    autoPlayInterval={5000}
                   />
                 ) : (
                   <p className="no-images">No images available</p>
                 )}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

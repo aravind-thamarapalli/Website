@@ -1,41 +1,36 @@
 import { Routes, Route } from 'react-router-dom'
 import { Home, About, Team, Event, EventDetails, Verticle, Verticles, Contact, Upcoming } from './components/pages'
-import { StaggeredMenu } from './components/layout'
+import { PillNav } from './components/layout'
 import logo from './assets/logo.png'
 import './App.css'
+import { useLocation } from 'react-router-dom'
 
 function App() {
-  const menuItems = [
-    { label: 'Home', link: '/', ariaLabel: 'Navigate to Home' },
-    { label: 'About', link: '/aboutus', ariaLabel: 'Navigate to About Us' },
-    { label: 'Events', link: '/event', ariaLabel: 'Navigate to Events' },
-    { label: 'Team', link: '/team', ariaLabel: 'Navigate to Team' },
-    { label: 'Verticles', link: '/verticles', ariaLabel: 'Navigate to Verticles' },
-    { label: 'Contact', link: '/contact', ariaLabel: 'Navigate to Contact' },
-    { label: 'piCSEl', link: '#', ariaLabel: 'Navigate to Upcoming Events' }
-  ];
+  const location = useLocation();
 
-  const socialLinks = [
-    { label: 'Instagram', link: 'https://www.instagram.com/asci.gvpce/' },
-    { label: 'LinkedIn', link: 'https://www.linkedin.com/company/asci-gvpce/' },
-    { label: 'GitHub', link: 'https://github.com/aravind-thamarapalli' }
+  const menuItems = [
+    { label: 'Home', href: '/', ariaLabel: 'Navigate to Home' },
+    { label: 'About', href: '/aboutus', ariaLabel: 'Navigate to About Us' },
+    { label: 'Events', href: '/event', ariaLabel: 'Navigate to Events' },
+    { label: 'Team', href: '/team', ariaLabel: 'Navigate to Team' },
+    { label: 'Verticles', href: '/verticles', ariaLabel: 'Navigate to Verticles' },
+    { label: 'Contact', href: '/contact', ariaLabel: 'Navigate to Contact' }
   ];
 
   return (
     <>
-      <StaggeredMenu
-        position="right"
-        colors={['#002032', '#003550', '#004668']}
+      <PillNav
+        logo={logo}
+        logoAlt="AsCI Logo"
         items={menuItems}
-        socialItems={socialLinks}
-        displaySocials={true}
-        displayItemNumbering={true}
-        logoUrl={logo}
-        menuButtonColor="#000"
-        openMenuButtonColor="#000"
-        accentColor="#64b8e6"
-        changeMenuColorOnOpen={false}
-        isFixed={true}
+        activeHref={location.pathname}
+        className="custom-nav"
+        ease="power2.easeOut"
+        baseColor="rgba(0, 32, 50, 0.5)"
+        pillColor="#ffffff"
+        hoveredPillTextColor="#ffffff"
+        pillTextColor="#002032"
+        initialLoadAnimation={true}
       />
       {/* <PillNav
         logo={logo}

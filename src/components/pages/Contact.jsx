@@ -43,8 +43,8 @@ const Input = styled.input`
   width: 100%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  border: none;
-  background: rgba(255, 255, 255, 0.9);
+  border: 3px solid white;
+  background: rgba(0, 0, 0, 0.9);
   font-size: 1rem;
 
   &:focus {
@@ -55,8 +55,8 @@ const Input = styled.input`
 const NoroundInput = styled.input`
   width: 100%;
   padding: 0.75rem;
-  border: none;
-  background: rgba(255, 255, 255, 0.9);
+  border: 3px solid white;
+  background: rgba(0, 0, 0, 0.9);
   font-size: 1rem;
 
   &:focus {
@@ -74,11 +74,11 @@ const EmptyInput = styled.input`
 
 const TextArea = styled.textarea`
   padding: 0.75rem;
-  border: none;
+  border: 3px solid white;
   width: 100%;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   font-size: 1rem;
   min-height: 120px;
   resize: vertical;

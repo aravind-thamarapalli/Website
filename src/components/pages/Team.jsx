@@ -205,22 +205,28 @@ const faculty = [
       <div className="team">
         <h2 className="team-head">MEET OUR TEAM</h2>
         <div style={{ 
-          height: '420px', 
-          position: 'relative',
-          overflowX: 'auto',
-          overflowY: 'hidden',
-          padding: '1rem 0',
-          scrollbarWidth: 'thin',
-          scrollbarColor: '#64b8e6 rgba(255, 255, 255, 0.1)'
+          minHeight: '420px', 
+          height: 'auto',
+          overflow: 'hidden',
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: '1rem 0'
         }}>
-          <ChromaGrid 
-            items={faculty}
-            columns={5}
-            radius={300}
-            damping={0.45}
-            fadeOut={0.6}
-            ease="power3.out"
-          />
+          <div style={{ 
+            width: '100%',
+            transformOrigin: 'center'
+          }}>
+            <ChromaGrid 
+              items={faculty}
+              columns={5}
+              radius={300}
+              damping={0.45}
+              fadeOut={0.6}
+              ease="power3.out"
+            />
+          </div>
         </div>
       </div>
       <div className="student-scroll">

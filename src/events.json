@@ -1,14 +1,14 @@
 {
   "events": [
-    {
+     {
       "event_id": 1,
-      "event_name": "Tech_Quiz",
+      "event_name": "Inaugration of AsCI",
       "date": "5th October 2024",
       "venue": "Main Auditorium, Gayatri Vidya Parishad College of Engineering (Autonomous)",
       "list_of_activities": ["Online Quiz Contest"],
-      "domain": "Club Activity",
+      "domain": "AsCI",
       "participants": 150,
-      "description": "The Online Quiz Contest held during the inauguration of the Association of Computer Intellects (AsCI) was a highly engaging and informative event. Designed to test participants' knowledge of computer science and technology, the quiz featured a variety of topics ranging from coding languages to the latest technological trends.",
+      "description": "The inauguration of AsCI marked the beginning of a new era of innovation and collaboration. The event introduced the club’s vision, featured inspiring speeches, and concluded with an exciting Tech Quiz that encouraged students to showcase their technical knowledge and enthusiasm for learning.",
       "images": {
         "image1": "src/assets/events/inaug/1.jpg",
         "image2": "src/assets/events/inaug/2.jpg",
@@ -21,17 +21,33 @@
       "date": "5th October 2024",
       "venue": "Main Auditorium, Gayatri Vidya Parishad College of Engineering (Autonomous)",
       "list_of_activities": ["Tech Related Meme Making Contest"],
-      "domain": "Club Activity",
+      "domain": "AsCI",
       "participants": 50,
       "description": "LOLgorithms was a unique meme-making contest where students used humor to explain technical concepts related to algorithms and computer science. This event allowed participants to blend creativity with technical knowledge, making learning fun and engaging.",
       "images": {
-        "image1": "src/assets/events/inaug/1.jpg",
-        "image2": "src/assets/events/inaug/2.jpg",
-        "image3": "src/assets/events/inaug/3.jpg"
+        "image1": "src/assets/events/lol/1.jpg",
+        "image2": "src/assets/events/lol/2.jpg",
+        "image3": "src/assets/events/lol/3.jpg"
       }
     },
+     {
+        "event_id" : 3,
+        "event_name" : "Mindware",
+        "date":"5th October 2024",
+        "venue" : "Main Auditorium, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+        "list_of_activities" : ["Online Quiz Contest"],
+        "domain" : "AsCI",
+        "participants" : 50,
+        "description" : "Mindware was an engaging online quiz contest that tested participants' knowledge of computer science and technology. The quiz featured a variety of topics ranging from coding languages to the latest technological trends.",
+        "images" : {
+            "image1": "src/assets/events/lol/1.jpg",
+            "image2" : "src/assets/events/inaug/2.jpg",
+            "image3" : "src/assets/events/inaug/3.jpg"
+        }
+
+     },
     {
-      "event_id": 3,
+      "event_id": 4,
       "event_name": "Cyber Hive",
       "date": "30th November 2024",
       "venue": "Mini Auditorium, Gayatri Vidya Parishad College of Engineering (Autonomous)",
@@ -46,7 +62,7 @@
       }
     },
     {
-      "event_id": 4,
+      "event_id": 5,
       "event_name": "Output Unveiled",
       "date": "7th December 2024",
       "venue": "MIC Lab, Gayatri Vidya Parishad College of Engineering (Autonomous)",
@@ -55,13 +71,13 @@
       "participants": 50,
       "description": "Output Unveiled was an intense coding contest where participants solved 16 programming challenges in C and C++, unlocking each level with the output of the previous question. It tested logical thinking, debugging, and problem-solving skills.",
       "images": {
-        "image1": "src/assets/events/outputunvieled/1.jpg",
-        "image2": "src/assets/events/outputunvieled/2.jpg",
-        "image3": "src/assets/events/outputunvieled/3.jpg"
+        "image1": "src/assets/events/output/1.jpg",
+        "image2": "src/assets/events/output/2.jpg",
+        "image3": "src/assets/events/output/3.jpg"
       }
     },
     {
-      "event_id": 5,
+      "event_id": 6,
       "event_name": "PyMind",
       "date": "7th December 2024",
       "venue": "MIC Lab, Gayatri Vidya Parishad College of Engineering (Autonomous)",
@@ -76,7 +92,7 @@
       }
     },
     {
-      "event_id": 6,
+      "event_id": 7,
       "event_name": "Crypto Countdown: Final Block of 2024",
       "date": "27th & 28th December 2024",
       "venue": "Online, Gayatri Vidya Parishad College of Engineering (Autonomous)",
@@ -91,7 +107,7 @@
       }
     },
     {
-      "event_id": 7,
+      "event_id": 8,
       "event_name": "GET GIT GO – Master Version Control",
       "date": "7th February 2025",
       "venue": "LAB, Gayatri Vidya Parishad College of Engineering (Autonomous)",
@@ -106,7 +122,7 @@
       }
     },
     {
-      "event_id": 8,
+      "event_id": 9,
       "event_name": "Master The Code",
       "date": "14th Feb 2025",
       "venue": "Main Auditorium, Gayatri Vidya Parishad College of Engineering (Autonomous)",
@@ -119,6 +135,131 @@
         "image2": "src/assets/events/masterthecode/2.jpg",
         "image3": "src/assets/events/masterthecode/3.jpg"
       }
+    },
+    {
+        "event_id" : 10,
+        "event_name" : "Skill Over Knowledge – Thriving in the AI Era",
+        "date" : "19th February 2025",
+        "venue" : "Main Auditorium, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+        "list_of_activities" : ["An interactive session about the upcoming AI world"],
+        "domain" : "",
+        "participants" : 50,
+        "description" : "The event highlighted the growing importance of hands-on skills over theoretical knowledge in today’s education system.",
+        "images" :{
+            "image1": "src/assets/events/skill_ai/1.jpg",
+            "image2" : "src/assets/events/skill_ai/2.jpg",
+            "image3" : "src/assets/events/skill_ai/3.jpg"
+        }
+
+    },
+    {
+        "event_id": 11,
+        "event_name" : "Android Dev Sprint",
+        "date" : "24th Feb 2025",
+        "venue" : "MIC Lab, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+        "list_of_activities" : ["Hands-on Workshop", "Interactive Session on Android Development"],
+        "domain" : "",
+        "participants" : 50,
+        "description" : "A hands-on workshop aimed at introducing 1st and 2nd-year students to the fundamentals of Android development.",
+        "images" :{
+            "image1": "src/assets/events/Android/img-1.jpg",
+            "image2" : "src/assets/events/Android/img-2.jpg",
+            "image3" : "src/assets/events/Android/img-3.jpg"
+        }
+    },
+    {
+        "event_id" : 12,
+        "event_name": "Catch The Phish",
+        "date": "28th March 2025",
+        "venue": "MIC Lab, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+        "list_of_activities": ["INTRODUCTORY SESSION ON CYBERSECURITY & PHISHING", "CATCH THE PHISH CHALLENGE (MAIN COMPETITION)", "INTERACTIVE EXPERT SESSION BY DR. P. KRISHNA SUBBA RAO"
+    ,"Q&A AND DISCUSSION SESSION" , "ACKNOWLEDGMENT AND CLOSING"],
+        "domain": "Cybersecurity & Networking",
+        "participants" : 50,
+        "description" : "To educate students on the dangers of phishing attacks and strengthen their ability to recognize and mitigate cyber threats through an interactive and engaging competition. ",
+        "images" :{
+            "image1": "src/assets/events/Catch_the_phish/1.jpg",
+            "image2" : "src/assets/events/Catch_the_phish/2.jpg",
+            "image3" : "src/assets/events/Catch_the_phish/3.jpg"
+        }
+    },
+    {
+        "event_id" : 13,
+        "event_name" : "Byte the Byte",
+        "date" : "3rd April 2025 & 4th April 2025",
+        "venue" :"MIC Lab, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+        "list_of_activities" : ["Fundamentals of Git" , "Fundamentals of Linux Commands" , "Online Quiz"],
+        "domain" : "Club Activity",
+        "participants" : 50,
+        "description" : "A two days workshop is conducted on Linux Commands , GitHub and Programming Language.",
+        "images" : {
+            "image1": "src/assets/events/Byte_the_Byte/1.jpg",
+            "image2" : "src/assets/events/Byte_the_Byte/2.jpg",
+            "image3" : "src/assets/events/Byte_the_Byte/3.jpg"
+        }
+    },
+    {
+        "event_id" : 14,
+        "event_name" : "DataSprint - Crack the data, Win the sprint",
+        "date":"",
+        "venue" : "",
+        "list_of_activities" : [],
+        "domain" : "",
+        "participants" : 50,
+        "description" : "",
+        "images" : {
+            "image1": "src/assets/events/dataSprint/1.jpg",
+            "image2" : "src/assets/events/dataSprint/2.jpg",
+            "image3" : "src/assets/events/dataSprint/3.jpg"
+        }
+
+    },
+    {
+        "event_id" : 15,
+        "event_name" : "UI Forge",
+        "date": "7th August 2025",
+        "venue" : "Online, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+        "list_of_activities" : ["Instructions how to participate" , "Selecting Winner who got more number of votes"],
+        "domain":"Web Development" ,
+        "participants" : 50,
+        "description" : "We'll Give prompt to everyone and implement it and after completing it we'll conduct voting .The one who gets the most votes for the best implementation will be the winner",
+         "images" : {
+            "image1": "",
+            "image2" : "",
+            "image3" : ""
+        }
+
+    },
+    {
+        "event_id" : 16,
+        "event_name" : "Explore the cloud",
+        "date": "22nd August 2025",
+        "venue" :"Main Auditorium, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+        "list_of_activities" : ["Interactive Session on Cloud Computing"],
+        "domain" : "Cloud Computing",
+        "participants": 50,
+        "description": "To educate students on the cloud computing and strengthen their ability in cloud through an interactive.",
+        "images" : {
+            "image1": "src/assets/events/explore_cloud/1.jpg",
+            "image2" : "src/assets/events/explore_cloud/2.jpg",
+            "image3" : "src/assets/events/explore_cloud/3.jpg"
+        }
+
+    },
+    {
+        "event_id" : 17,
+        "event_name": "Decode the World of Cybersecurity",
+        "date" : "11th October 2025",
+        "venue" :"Main Auditorium, Gayatri Vidya Parishad College of Engineering (Autonomous)",
+        "list_of_activities" : ["Insighful session on CTFs , Bug Bounties and Growth in cyber security"],
+        "domain" :"Cybersecurity & Networking",
+        "participants" : 50,
+        "description" : "To educate students on the Bug Bounties , CTFs and strengthen their ability in Cybersecurity an interactive and engaging competition. ",
+         "images" : {
+            "image1": "src/assets/events/decode_world/1.jpg",
+            "image2" : "src/assets/events/decode_world/1.jpg",
+            "image3" : "src/assets/events/decode_world/1.jpg"
+        }
     }
   ]
 }
